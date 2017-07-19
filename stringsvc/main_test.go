@@ -10,7 +10,7 @@ func TestUppercase(t *testing.T) {
 		t.Error("Unable to uppercase string")
 	}
 	if ssUpper != "FOO" {
-		t.Error("This isn't uppercase foo: %s", ssUpper)
+		t.Errorf("This isn't uppercase foo: %s", ssUpper)
 	}
 }
 
@@ -20,3 +20,5 @@ func TestCount(t *testing.T) {
 		t.Errorf("Count is %d", count)
 	}
 }
+
+func Test
